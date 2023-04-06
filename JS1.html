@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS1</title>
+    <script type="text/javascript">
+      var count = 0;
+
+      function incrementCount() {
+        count++;
+        document.getElementById("count").innerHTML = count;
+      }
+
+      function decrementCount() {
+        count--;
+        document.getElementById("count").innerHTML = count;
+      }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    </style>
+  </head>
+  <body>
+
+    <h1>JavaScript Function 1</h1>
+    <p>Use the two buttons below to increment or decrement the count on-screen</p>
+    <p>Count: <span id="count">0</span></p>
+    <div>
+        <button onclick="incrementCount()">+1</button>
+        <button onclick="decrementCount()">-1</button>
+    </div>
+    
+  </body>
+</html>

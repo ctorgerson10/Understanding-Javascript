@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS2</title>
+    <script type="text/javascript">
+      var smile = smile ? true : false;
+      function toggleEmoticon() {
+        var smiley = document.getElementById("smiley");
+        if (smile) {
+          smiley.innerHTML = ":)";
+        } else {
+          smiley.innerHTML = ":(";
+        }
+        smile = !smile;
+      }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Function 2</h1>
+    <p>Click the button below to toggle the smiley between happy and sad</p>
+    <p id="smiley">:)</p>
+    <button onclick="toggleEmoticon()">Happy or Sad?</button>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS3</title>
+    <style type="text/css">
+      #square {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+      }
+
+      body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+      function changeColor() {
+        var square = document.getElementById("square");
+        var red = Math.floor(Math.random() * 256);
+        var green = Math.floor(Math.random() * 256);
+        var blue = Math.floor(Math.random() * 256);
+        var color = "rgb(" + red + ", " + green + ", " + blue + ")";
+        square.style.backgroundColor = color;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript Function 3</h1>
+    <p>Click the button below to change the square to a random color</p>
+    <div id="square"></div>
+    <button onclick="changeColor()">Change Color</button>
+  </body>
+</html>
