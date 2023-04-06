@@ -2,8 +2,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h3 {
+h1, h3, p {
     text-align: center;
+}
+
+p {
+    margin-top: 50px;
 }
 
 .container {
